@@ -1,4 +1,4 @@
-# AI Job Interview Platform
+# Job Interview Track Platform
 
 Track job applications and prepare for each company's interview — Flask REST API,
 SQLAlchemy database layer, and a vanilla JavaScript front end.
