@@ -209,3 +209,124 @@ button:hover {
         padding: 20px;
     }
 }
+/* ---------- additions: extra form fields ---------- */
+
+textarea {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+    resize: vertical;
+}
+
+textarea:focus {
+    border-color: #2563eb;
+}
+
+#notes {
+    grid-column: 1 / -1;
+}
+
+/* ---------- additions: messages, stats, toolbar ---------- */
+
+#message {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fca5a5;
+    border-radius: 7px;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.stat {
+    background: white;
+    border-radius: 10px;
+    padding: 14px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.stat strong {
+    display: block;
+    font-size: 26px;
+    color: #1f2937;
+}
+
+.stat span {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.toolbar {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+/* ---------- additions: job card details ---------- */
+
+.job-card .meta {
+    color: #4b5563;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.job-card .meta-link {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #2563eb;
+    font-size: 14px;
+}
+
+.job-card .notes {
+    background: #f9fafb;
+    border-left: 3px solid #d1d5db;
+    padding: 8px 10px;
+    font-size: 14px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.job-buttons {
+    flex-wrap: wrap;
+}
+
+.job-buttons button.secondary {
+    background: #4b5563;
+}
+
+.history {
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+
+.history h4 {
+    margin-bottom: 6px;
+}
+
+.history p {
+    margin-bottom: 4px;
+    color: #4b5563;
+}
+
+.empty {
+    color: #6b7280;
+}
+
+@media (max-width: 800px) {
+    .toolbar {
+        grid-template-columns: 1fr;
+    }
+}
